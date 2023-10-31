@@ -16,21 +16,25 @@
 // Khai báo 1 biến 
 //(1) var i int           -- Khai báo 
 //(2) var i int = 10      -- Khai báo và khởi tạo
-//(3) i := 10             -- Kháo báo và tự ép kiểu 
+//(3) i := 10             -- Kháo báo và tự ép kiểu -> sử dùng trong 
+//(4) var student2 = 111  -- Kháo báo và tự ép kiểu -> sử dùng trong và ngoài func
 
 
-// package main
 
-// import "fmt"
+package main
 
-// var j int = 1 
+import "fmt"
 
-// func main() {
-// 	i := 1
-// 	var j int = 2
-// 	j := 2
-// 	fmt.Println("Hello, 世界", i+1, j)
-// }
+var j int = 1 
+
+func main() {
+	i := 1
+	var j int = 2
+	//j := 2
+	var student2 = 111 //type is inferred
+	fmt.Printf("value: %v, type: %T  \n", student2, student2)
+	fmt.Println("Hello, 世界", i+1, j)
+}
 
 //-----------------------------------------------------
 // 3. Global and block scope
@@ -63,14 +67,14 @@
 //----------------------------------------------------
 // 8. Convert type
 // hoặc sử dụng strconv
-package main
+// package main
 
-import "fmt"
+// import "fmt"
 
 
-func main() {
-	var a int  = 100
-	var b float32  = float32(a)
-	fmt.Printf("%v %T", b, b)
-}
+// func main() {
+// 	var a int  = 100
+// 	var b float32  = float32(a)
+// 	fmt.Printf("%v %T", b, b)
+// }
 

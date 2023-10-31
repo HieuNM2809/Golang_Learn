@@ -22,3 +22,17 @@
 //        - Chuỗi (String)
 //        - Mảng Byte (Byte)
 //        - Rune
+/**
+
+Primitive Data Types 
+1. Boolean
+2. Numberics
+   Interger 
+   Float
+   Complex
+3. Text
+   String 
+   Bype
+   Rune
+   
+**/
